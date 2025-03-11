@@ -1,0 +1,16 @@
+import random
+
+computer=random.randint(1,100)
+print(computer)
+
+while True:
+    num=input("숫자 입력: ")
+    num=int(num)
+    
+    if computer < num:
+        print("Down")
+    elif num == computer:
+        print("정답")
+        break
+    else:
+        print("Up")
